@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>💞 Oye Pondatti</title>
+    <title>Secure Entry</title>
     <style>
         body {
             background: none;
@@ -26,6 +26,7 @@
             z-index: -1;
         }
         .island {
+            position: relative;
             background-color: #FFC1E3;
             padding: 30px;
             border-radius: 20px;
@@ -94,15 +95,15 @@
         }
         .decorations, .decorations-right {
             position: absolute;
-            font-size: 24px;
+            font-size: 30px;
         }
         .decorations {
-            top: -40px;
-            left: -20px;
+            top: 2px; /* Adjusted to ensure visibility within the parent */
+            left: 2px;
         }
         .decorations-right {
-            bottom: -40px;
-            right: -20px;
+            bottom: 2px; /* Adjusted to ensure visibility within the parent */
+            right: 2px;
         }
         @media (max-width: 600px) {
             .island {
@@ -133,10 +134,10 @@
         Your browser does not support the video tag.
     </video>
     <div class="island" id="island">
-        <div class="decorations">🎀💕🌸✨</div>
-        <div class="decorations-right">💖🎶💓🎀</div>
+        <div class="decorations">🎀💕🌸💖</div>
+        <div class="decorations-right">💖🌸💓🎀</div>
         <div class="heart-image"></div>
-        <h2>Enter Code</h2>
+        <h2>Password:</h2>
         <div class="input-container">
             <input type="password" id="code" class="input-box" disabled>
             <button class="clear-btn" onclick="clearCode()">✖</button>
