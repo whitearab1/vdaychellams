@@ -88,29 +88,38 @@
         .button:active {
             transform: scale(0.95);
         }
-        .decorations {
+        .decorations, .decorations-right {
             position: absolute;
+            font-size: 24px;
+        }
+        .decorations {
             top: -40px;
             left: -20px;
-            font-size: 24px;
         }
         .decorations-right {
-            position: absolute;
             bottom: -40px;
             right: -20px;
-            font-size: 24px;
         }
-        @keyframes confetti {
-            0% { transform: translateY(0) rotate(0deg); }
-            100% { transform: translateY(100vh) rotate(360deg); }
-        }
-        .confetti {
-            position: absolute;
-            width: 10px;
-            height: 10px;
-            background: pink;
-            opacity: 0.7;
-            animation: confetti 3s linear infinite;
+        @media (max-width: 600px) {
+            .island {
+                width: 90%;
+                padding: 15px;
+                font-size: 14px;
+            }
+            .heart-image {
+                width: 150px;
+                height: 150px;
+            }
+            .input-box {
+                font-size: 16px;
+            }
+            .button {
+                padding: 10px;
+                font-size: 16px;
+            }
+            .decorations, .decorations-right {
+                font-size: 18px;
+            }
         }
     </style>
 </head>
